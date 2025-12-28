@@ -60,7 +60,7 @@ export function HeroIntro() {
           >
               <div className="w-64 h-64 md:w-80 md:h-80 relative">
                   <img
-                      src="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/portfolio-avatar.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAYG24RFJOES6WIXQZ%2F20251228%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20251228T052812Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkYwRAIgeM5emSYyGOMeTszM1bTh%2FLvGhTMLcuGarhyhJQlyIo8CIFpw9oVNg6VWhsnr%2FuG3kxcZSHzz3uzDFMbLM8Pv%2FW1HKpkCCH8QABoMNTY0NDQ1MzkxNDUyIgwtq%2BYNrxupUbF8sqcq9gEKjasofuiXZbuTvOJettzgpsEnCKwRlTaibSOl2OCdJLHrztmTjR%2B%2B9BY1ZSP9GXB9xzbNUUppCTYBpUDyW4esp9Q74ZmtqJM5fASPMr%2BPmsOrftEXoDv0ajl5ksTMi6rl2tey7MvjZBefCp4vAGSn96vrgwUEnl2OutvdsTJLkfDIu9kKK0QZu8OL5xWu5s8wRBQOSRNA11%2Fsih0WLb%2BG%2FIBhC0F6JS%2BrXTxlyGuKNLjE3LjlPouDW3W2YWwW6wazeZhN8Fp75EySDcldIuSArF8O1LhWmlgWtTuH6SVCogyRaiclfH28fePSyCPs13MiIEgnRHkw5%2FrCygY64AEMb6xH%2Fc%2FSWOJoMOf%2FBB8e5dsHs71Inp64mOPslbrmNy5wW2Moc9B16QEQrxapfy9nA7qJFCWFFle%2Bxo%2BiNq8clMWzevWd4jHfhPLa07cYnmovtirRooqyyNjtqtdoLsRLLPgneM8epmbus7TSRGoNJABrwKKtKmPHdTz%2BtomXpDAhIgzniYfyTCjuA%2Fuv%2BN23va9yRvYvyYTibkhW2mewyjtIdsN%2FfCIdE8Qu4y5%2FyuExG6v2WOoKyUQz7Dc%2FaAVvQ3RNBuP2itiPlw9Tz%2BF%2Bvw3mryAS4%2BkqCx1WPFprAg%3D%3D&X-Amz-Signature=fa2fd522d71236343f498e097a001cb4efddbac8c2b8442c38a21d43b6354bec&X-Amz-SignedHeaders=host&response-content-disposition=inline"
+                      src="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/portfolio-avatar.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAYG24RFJOBDCZMMNL%2F20251228%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20251228T053831Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkgwRgIhAP4Ae2LiHLqJAHxtuiBfg0dDs3qct6PW%2BsTljqSL1naGAiEAgn2FxloLVHGo00QNmaQHXZa1ZXyDSMV26mpMfrgkvS4qmQIIfxAAGgw1NjQ0NDUzOTE0NTIiDEH2FJawUx9%2F%2B40vkCr2Aa1LWYPnjzkZOnm%2FVoHVTLy99il2c1Ge1hAEj3S%2F2VkPVkKy9P%2Bwq7WpjxOKXA7CPFHRr6RUuqNEK1O%2FfHg5E8x7TrqxPCKrx8izOQwAkwO3HOfDfzEH1LEdDVFbF7MV0vnnwyK01LM%2BxPpvVll6u4z6waCcrgufJ9%2BYrY%2BSGWAJT5cdC9%2BOSaHjKbeHZYoqGU9Eik8m%2FFU7J%2FpMR19HzSSOTIzCc1ybp2eesfLf4B2%2BQiXuTYgzSde0C6uNPC0d%2FF4tTBQeSFCdy661rPpqlDPuUrIJurvoRDU1YXssJOr%2BaNlHHeh%2F5duIMzJNcafnbwFERNUbKTDn%2BsLKBjreAWY72sq%2FZsl3CTeTnP0dHfSfEw%2Fn1u2n0b%2FJ5VTY9C3pPw2%2Bnp7xbPIW5OofN2AegZzBsWuKZcGURwSdFRJyZ%2B2dF2q6tX7IIzIM0SdT3ydVCj2WXvMbDcIt4AWGCjc6D5CKmbNJRnlh6L6Fa2ELpL50i8lWz6Xo%2BbOrDI0VeiwwZ%2BnZmtL%2BlkwE4WsLkl1XlCWxiE0OptSV3IT%2F52m%2F5ZLjDRupzX5i4dWUxhN%2FC80CZLkBgzhWBR89GzBfAZdjRhucaXsbe2Tnhx3w%2FbgfS6OJIXCdaTC6%2FHthrIuXkw%3D%3D&X-Amz-Signature=256614c83c6b38fe8cff2e47708aafa08e474f48ff4d11a6e8a312a80d3e3e75&X-Amz-SignedHeaders=host&response-content-disposition=inline"
                       alt="Character"
                       className="w-full h-full object-contain rounded-lg"
                   />
@@ -69,70 +69,6 @@ export function HeroIntro() {
               </div>
 
           </motion.div>
-        {/* Waving Character Animation */}
-      {/*  <motion.div initial={{*/}
-      {/*  scale: 0.8,*/}
-      {/*  opacity: 0*/}
-      {/*}} animate={{*/}
-      {/*  scale: 1,*/}
-      {/*  opacity: 1*/}
-      {/*}} transition={{*/}
-      {/*  duration: 1,*/}
-      {/*  ease: 'easeOut'*/}
-      {/*}} className="mb-12 relative inline-block">*/}
-      {/*    <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-dota-gold-500 shadow-glow-gold bg-gradient-to-br from-dota-blue-600 to-dota-blue-400 flex items-center justify-center overflow-hidden relative group">*/}
-      {/*      /!* Character Illustration *!/*/}
-      {/*      <div className="absolute inset-0 flex items-center justify-center">*/}
-      {/*        /!* Head *!/*/}
-      {/*        <div className="absolute top-12 w-16 h-16 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />*/}
-
-      {/*        /!* Blue Jacket Body *!/*/}
-      {/*        <div className="absolute top-24 w-24 h-20 bg-dota-blue-600 rounded-t-3xl border-2 border-dota-blue-400" />*/}
-
-      {/*        /!* Waving Arm *!/*/}
-      {/*        <motion.div animate={{*/}
-      {/*        rotate: [0, -20, 10, -20, 0]*/}
-      {/*      }} transition={{*/}
-      {/*        duration: 1.5,*/}
-      {/*        repeat: Infinity,*/}
-      {/*        repeatDelay: 1*/}
-      {/*      }} className="absolute top-28 -right-2 w-6 h-12 bg-dota-blue-600 rounded-full origin-top border-2 border-dota-blue-400" style={{*/}
-      {/*        transformOrigin: 'top center'*/}
-      {/*      }}>*/}
-      {/*          /!* Hand *!/*/}
-      {/*          <div className="absolute -bottom-1 -left-1 w-5 h-5 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />*/}
-      {/*        </motion.div>*/}
-
-      {/*        /!* Static Arm *!/*/}
-      {/*        <div className="absolute top-28 -left-2 w-6 h-12 bg-dota-blue-600 rounded-full border-2 border-dota-blue-400">*/}
-      {/*          <div className="absolute -bottom-1 -left-1 w-5 h-5 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />*/}
-      {/*        </div>*/}
-
-      {/*        /!* Smile *!/*/}
-      {/*        <div className="absolute top-20 w-8 h-3 border-b-2 border-dota-dark-800 rounded-b-full" />*/}
-      {/*      </div>*/}
-
-      {/*      /!* Ornate details *!/*/}
-      {/*      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-dota-gold-500 rotate-45 -mt-2" />*/}
-      {/*      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-dota-gold-500 rotate-45 -mb-2" />*/}
-      {/*    </div>*/}
-      {/*  </motion.div>*/}
-
-          {/*/!* Scroll Indicator - with wider gap *!/*/}
-          {/*<motion.div*/}
-          {/*    className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-6"*/}
-          {/*    animate={{ y: [0, 10, 0] }}*/}
-          {/*    transition={{ duration: 2, repeat: Infinity }}*/}
-          {/*>*/}
-          {/*    <span className="text-slate-400 text-sm tracking-widest">SCROLL</span>*/}
-          {/*    <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex items-start justify-center p-2">*/}
-          {/*        <motion.div*/}
-          {/*            className="w-1.5 h-1.5 bg-slate-400 rounded-full"*/}
-          {/*            animate={{ y: [0, 12, 0] }}*/}
-          {/*            transition={{ duration: 1.5, repeat: Infinity }}*/}
-          {/*        />*/}
-          {/*    </div>*/}
-          {/*</motion.div>*/}
 
           {/* Scroll Indicator */}
           <motion.div
@@ -146,6 +82,31 @@ export function HeroIntro() {
               </div>
               <div className="w-[1px] h-12 bg-gradient-to-b from-dota-gold-600 to-transparent" />
           </motion.div>
+
+          {/* Intro Text */}
+          <motion.h1
+              className="text-4xl md:text-6xl font-bold text-white mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+          >
+              Hey, I'm{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              Kei
+            </span>
+          </motion.h1>
+
+          <motion.p
+              className="text-2xl md:text-3xl text-slate-300 mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+          >
+              and I like to make{' '}
+              <span className="inline-block min-w-[200px] text-left font-mono text-cyan-400">
+              {displayText}
+            </span>
+          </motion.p>
 
 
           {/* Stats / Roles */}
