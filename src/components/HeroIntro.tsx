@@ -44,93 +44,111 @@ export function HeroIntro() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Waving Character Animation */}
-        <motion.div initial={{
-        scale: 0.8,
-        opacity: 0
-      }} animate={{
-        scale: 1,
-        opacity: 1
-      }} transition={{
-        duration: 1,
-        ease: 'easeOut'
-      }} className="mb-12 relative inline-block">
-          <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-dota-gold-500 shadow-glow-gold bg-gradient-to-br from-dota-blue-600 to-dota-blue-400 flex items-center justify-center overflow-hidden relative group">
-            {/* Character Illustration */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              {/* Head */}
-              <div className="absolute top-12 w-16 h-16 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center min-h-screen flex flex-col items-center justify-center gap-12">
 
-              {/* Blue Jacket Body */}
-              <div className="absolute top-24 w-24 h-20 bg-dota-blue-600 rounded-t-3xl border-2 border-dota-blue-400" />
+      {/* Character Image */}
+          <motion.div
+              className="relative"
+              animate={{
+                  y: [0, -10, 0],
+              }}
+              transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+              }}
+          >
+              <div className="w-64 h-64 md:w-80 md:h-80 relative">
+                  <img
+                      src="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/portfolio-avatar.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAYG24RFJOES6WIXQZ%2F20251228%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20251228T052812Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkYwRAIgeM5emSYyGOMeTszM1bTh%2FLvGhTMLcuGarhyhJQlyIo8CIFpw9oVNg6VWhsnr%2FuG3kxcZSHzz3uzDFMbLM8Pv%2FW1HKpkCCH8QABoMNTY0NDQ1MzkxNDUyIgwtq%2BYNrxupUbF8sqcq9gEKjasofuiXZbuTvOJettzgpsEnCKwRlTaibSOl2OCdJLHrztmTjR%2B%2B9BY1ZSP9GXB9xzbNUUppCTYBpUDyW4esp9Q74ZmtqJM5fASPMr%2BPmsOrftEXoDv0ajl5ksTMi6rl2tey7MvjZBefCp4vAGSn96vrgwUEnl2OutvdsTJLkfDIu9kKK0QZu8OL5xWu5s8wRBQOSRNA11%2Fsih0WLb%2BG%2FIBhC0F6JS%2BrXTxlyGuKNLjE3LjlPouDW3W2YWwW6wazeZhN8Fp75EySDcldIuSArF8O1LhWmlgWtTuH6SVCogyRaiclfH28fePSyCPs13MiIEgnRHkw5%2FrCygY64AEMb6xH%2Fc%2FSWOJoMOf%2FBB8e5dsHs71Inp64mOPslbrmNy5wW2Moc9B16QEQrxapfy9nA7qJFCWFFle%2Bxo%2BiNq8clMWzevWd4jHfhPLa07cYnmovtirRooqyyNjtqtdoLsRLLPgneM8epmbus7TSRGoNJABrwKKtKmPHdTz%2BtomXpDAhIgzniYfyTCjuA%2Fuv%2BN23va9yRvYvyYTibkhW2mewyjtIdsN%2FfCIdE8Qu4y5%2FyuExG6v2WOoKyUQz7Dc%2FaAVvQ3RNBuP2itiPlw9Tz%2BF%2Bvw3mryAS4%2BkqCx1WPFprAg%3D%3D&X-Amz-Signature=fa2fd522d71236343f498e097a001cb4efddbac8c2b8442c38a21d43b6354bec&X-Amz-SignedHeaders=host&response-content-disposition=inline"
+                      alt="Character"
+                      className="w-full h-full object-contain rounded-lg"
+                  />
 
-              {/* Waving Arm */}
-              <motion.div animate={{
-              rotate: [0, -20, 10, -20, 0]
-            }} transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              repeatDelay: 1
-            }} className="absolute top-28 -right-2 w-6 h-12 bg-dota-blue-600 rounded-full origin-top border-2 border-dota-blue-400" style={{
-              transformOrigin: 'top center'
-            }}>
-                {/* Hand */}
-                <div className="absolute -bottom-1 -left-1 w-5 h-5 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />
-              </motion.div>
-
-              {/* Static Arm */}
-              <div className="absolute top-28 -left-2 w-6 h-12 bg-dota-blue-600 rounded-full border-2 border-dota-blue-400">
-                <div className="absolute -bottom-1 -left-1 w-5 h-5 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />
+                  <div className="absolute inset-0 bg-blue-500/20 blur-3xl -z-10 rounded-full" />
               </div>
 
-              {/* Smile */}
-              <div className="absolute top-20 w-8 h-3 border-b-2 border-dota-dark-800 rounded-b-full" />
-            </div>
+          </motion.div>
+        {/* Waving Character Animation */}
+      {/*  <motion.div initial={{*/}
+      {/*  scale: 0.8,*/}
+      {/*  opacity: 0*/}
+      {/*}} animate={{*/}
+      {/*  scale: 1,*/}
+      {/*  opacity: 1*/}
+      {/*}} transition={{*/}
+      {/*  duration: 1,*/}
+      {/*  ease: 'easeOut'*/}
+      {/*}} className="mb-12 relative inline-block">*/}
+      {/*    <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-dota-gold-500 shadow-glow-gold bg-gradient-to-br from-dota-blue-600 to-dota-blue-400 flex items-center justify-center overflow-hidden relative group">*/}
+      {/*      /!* Character Illustration *!/*/}
+      {/*      <div className="absolute inset-0 flex items-center justify-center">*/}
+      {/*        /!* Head *!/*/}
+      {/*        <div className="absolute top-12 w-16 h-16 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />*/}
 
-            {/* Ornate details */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-dota-gold-500 rotate-45 -mt-2" />
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-dota-gold-500 rotate-45 -mb-2" />
-          </div>
-        </motion.div>
+      {/*        /!* Blue Jacket Body *!/*/}
+      {/*        <div className="absolute top-24 w-24 h-20 bg-dota-blue-600 rounded-t-3xl border-2 border-dota-blue-400" />*/}
 
-        {/* Hero Name & Title with Word Jumble */}
-        <motion.div initial={{
-        y: 50,
-        opacity: 0
-      }} animate={{
-        y: 0,
-        opacity: 1
-      }} transition={{
-        delay: 0.3,
-        duration: 0.8
-      }}>
-          <h1 className="text-4xl md:text-6xl font-hero font-bold text-dota-silver-100 mb-4 tracking-wide">
-            Hey, I'm{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-b from-dota-gold-400 to-dota-gold-600">
-              Kei
-            </span>
-          </h1>
+      {/*        /!* Waving Arm *!/*/}
+      {/*        <motion.div animate={{*/}
+      {/*        rotate: [0, -20, 10, -20, 0]*/}
+      {/*      }} transition={{*/}
+      {/*        duration: 1.5,*/}
+      {/*        repeat: Infinity,*/}
+      {/*        repeatDelay: 1*/}
+      {/*      }} className="absolute top-28 -right-2 w-6 h-12 bg-dota-blue-600 rounded-full origin-top border-2 border-dota-blue-400" style={{*/}
+      {/*        transformOrigin: 'top center'*/}
+      {/*      }}>*/}
+      {/*          /!* Hand *!/*/}
+      {/*          <div className="absolute -bottom-1 -left-1 w-5 h-5 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />*/}
+      {/*        </motion.div>*/}
 
-          <div className="flex items-center justify-center gap-3 mb-8 flex-wrap">
-            <span className="text-xl md:text-2xl font-lore text-dota-silver-300">
-              and I like to make
-            </span>
-            <div className="relative inline-block min-w-[200px]">
-              <motion.span key={displayText} initial={{
-              opacity: 0,
-              y: 20
-            }} animate={{
-              opacity: 1,
-              y: 0
-            }} className={`text-xl md:text-2xl font-lore font-bold text-transparent bg-clip-text bg-gradient-to-r from-dota-blue-400 to-dota-gold-400 ${isScrambling ? 'blur-[1px]' : ''}`}>
-                {displayText}
-              </motion.span>
-            </div>
-          </div>
-        </motion.div>
+      {/*        /!* Static Arm *!/*/}
+      {/*        <div className="absolute top-28 -left-2 w-6 h-12 bg-dota-blue-600 rounded-full border-2 border-dota-blue-400">*/}
+      {/*          <div className="absolute -bottom-1 -left-1 w-5 h-5 rounded-full bg-dota-silver-300 border-2 border-dota-dark-800" />*/}
+      {/*        </div>*/}
 
-        {/* Stats / Roles */}
+      {/*        /!* Smile *!/*/}
+      {/*        <div className="absolute top-20 w-8 h-3 border-b-2 border-dota-dark-800 rounded-b-full" />*/}
+      {/*      </div>*/}
+
+      {/*      /!* Ornate details *!/*/}
+      {/*      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-dota-gold-500 rotate-45 -mt-2" />*/}
+      {/*      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-dota-gold-500 rotate-45 -mb-2" />*/}
+      {/*    </div>*/}
+      {/*  </motion.div>*/}
+
+          {/*/!* Scroll Indicator - with wider gap *!/*/}
+          {/*<motion.div*/}
+          {/*    className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-6"*/}
+          {/*    animate={{ y: [0, 10, 0] }}*/}
+          {/*    transition={{ duration: 2, repeat: Infinity }}*/}
+          {/*>*/}
+          {/*    <span className="text-slate-400 text-sm tracking-widest">SCROLL</span>*/}
+          {/*    <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex items-start justify-center p-2">*/}
+          {/*        <motion.div*/}
+          {/*            className="w-1.5 h-1.5 bg-slate-400 rounded-full"*/}
+          {/*            animate={{ y: [0, 12, 0] }}*/}
+          {/*            transition={{ duration: 1.5, repeat: Infinity }}*/}
+          {/*        />*/}
+          {/*    </div>*/}
+          {/*</motion.div>*/}
+
+          {/* Scroll Indicator */}
+          <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: [0, 10, 0] }}
+              transition={{ delay: 1.5, duration: 2, repeat: Infinity }}
+              className=" absolute bottom-20 left-0.9 -translate-x-1/2 flex flex-col items-center gap-8 md:gap-16 text-dota-gold-600"
+          >
+              <div className="text-xs uppercase tracking-[0.3em] mb-2 font-ui">
+                  Scroll
+              </div>
+              <div className="w-[1px] h-12 bg-gradient-to-b from-dota-gold-600 to-transparent" />
+          </motion.div>
+
+
+          {/* Stats / Roles */}
         <motion.div initial={{
         opacity: 0
       }} animate={{
@@ -153,22 +171,7 @@ export function HeroIntro() {
           </div>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div initial={{
-        opacity: 0
-      }} animate={{
-        opacity: 1,
-        y: [0, 10, 0]
-      }} transition={{
-        delay: 1.5,
-        duration: 2,
-        repeat: Infinity
-      }} className="absolute bottom-10 left-1/2 -translate-x-1/2 text-dota-gold-600">
-          <div className="text-xs uppercase tracking-[0.3em] mb-2 font-ui">
-            Scroll
-          </div>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-dota-gold-600 to-transparent mx-auto" />
-        </motion.div>
+
       </div>
     </section>;
 }
