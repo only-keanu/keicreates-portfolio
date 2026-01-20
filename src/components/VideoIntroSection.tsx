@@ -62,7 +62,7 @@ export function VideoIntroSection() {
                     Video introduction coming soon
                   </p>
                   <p className="text-dota-silver-600 text-sm mt-2 font-ui">
-                    Replace this placeholder with your video URL
+                    Coming Soon!
                   </p>
                 </div>
               </div>
