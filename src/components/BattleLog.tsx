@@ -26,7 +26,7 @@ export function BattleLog() {
         <div className="mt-8 text-center text-dota-silver-500 text-xs">
           <p>Match ID: 83920192 • Replay Available</p>
           <p className="mt-2">
-            © {new Date().getFullYear()} Alex Walker. All rights reserved.
+            © {new Date().getFullYear()} Keane Hernandez. All rights reserved.
           </p>
         </div>
       </div>
