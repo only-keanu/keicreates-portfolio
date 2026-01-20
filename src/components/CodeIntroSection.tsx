@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Terminal } from 'lucide-react';
 export function CodeIntroSection() {
   const [displayedCode, setDisplayedCode] = useState('');
-  const codeLines = ['const developer = {', '  name: "Alex Walker",', '  title: "Full Stack Developer",', '  location: "San Francisco, CA",', '  experience: "5+ years",', '  specialization: ["React", "Node.js", "TypeScript"],', '  passion: "Building scalable web applications",', '  status: "Available for hire"', '};', '', 'console.log(developer.passion);', '// Output: "Building scalable web applications"'];
+  const codeLines = ['const developer = {', '  name: "Keane Hernandez",', '  title: "Full Stack Developer",', '  location: "Philippines",', '  experience: "2+ years",', '  specialization: ["React", "SpringBoot, "Java", "TypeScript"],', '  passion: "Building scalable web applications",', '  status: "Available for hire"', '};', '', 'console.log(developer.passion);', '// Output: "Building scalable web applications for business problems"'];
   useEffect(() => {
     let currentLine = 0;
     let currentChar = 0;
