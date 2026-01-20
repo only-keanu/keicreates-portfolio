@@ -24,9 +24,9 @@ export function Portfolio() {
       <div id="projects">
         <ProjectsSection />
       </div>
-      <div id="gallery">
-        <ProjectGallerySection />
-      </div>
+      {/*<div id="gallery">*/}
+      {/*  <ProjectGallerySection />*/}
+      {/*</div>*/}
       <ItemsSection />
       <div id="contact">
         <BattleLog />
