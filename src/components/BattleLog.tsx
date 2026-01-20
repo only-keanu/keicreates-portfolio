@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import {Facebook, Github, Linkedin, Mail, Twitter} from 'lucide-react';
 export function BattleLog() {
   return <footer className="bg-black border-t border-dota-dark-700 py-12 font-ui">
       <div className="max-w-4xl mx-auto px-6">
@@ -15,10 +15,10 @@ export function BattleLog() {
             <LogEntry time="21:15" text="Looking for team? Contact channels open." type="info" />
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <SocialButton icon={Github} label="GitHub" sub="View Source" href="#" />
-              <SocialButton icon={Linkedin} label="LinkedIn" sub="Connect" href="#" />
-              <SocialButton icon={Mail} label="Email" sub="Send Message" href="#" />
-              <SocialButton icon={Twitter} label="Twitter" sub="Follow" href="#" />
+              <SocialButton icon={Github} label="GitHub" sub="View Source" href="https://github.com/only-keanu" />
+              <SocialButton icon={Linkedin} label="LinkedIn" sub="Connect" href="https://www.linkedin.com/in/keane-keiph/" />
+              <SocialButton icon={Mail} label="Email" sub="Send Message" href="keane1hernandez@gmail.com" />
+              <SocialButton icon={Facebook} label="Facebook" sub="Follow" href="https://www.facebook.com/theonlykeiph/" />
             </div>
           </div>
         </div>

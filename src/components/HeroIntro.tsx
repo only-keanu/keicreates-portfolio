@@ -60,7 +60,7 @@ export function HeroIntro() {
           >
               <div className="w-64 h-64 md:w-80 md:h-80 relative">
                   <img
-                      src="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/portfolio-avatar.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAYG24RFJOBDCZMMNL%2F20251228%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20251228T053831Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkgwRgIhAP4Ae2LiHLqJAHxtuiBfg0dDs3qct6PW%2BsTljqSL1naGAiEAgn2FxloLVHGo00QNmaQHXZa1ZXyDSMV26mpMfrgkvS4qmQIIfxAAGgw1NjQ0NDUzOTE0NTIiDEH2FJawUx9%2F%2B40vkCr2Aa1LWYPnjzkZOnm%2FVoHVTLy99il2c1Ge1hAEj3S%2F2VkPVkKy9P%2Bwq7WpjxOKXA7CPFHRr6RUuqNEK1O%2FfHg5E8x7TrqxPCKrx8izOQwAkwO3HOfDfzEH1LEdDVFbF7MV0vnnwyK01LM%2BxPpvVll6u4z6waCcrgufJ9%2BYrY%2BSGWAJT5cdC9%2BOSaHjKbeHZYoqGU9Eik8m%2FFU7J%2FpMR19HzSSOTIzCc1ybp2eesfLf4B2%2BQiXuTYgzSde0C6uNPC0d%2FF4tTBQeSFCdy661rPpqlDPuUrIJurvoRDU1YXssJOr%2BaNlHHeh%2F5duIMzJNcafnbwFERNUbKTDn%2BsLKBjreAWY72sq%2FZsl3CTeTnP0dHfSfEw%2Fn1u2n0b%2FJ5VTY9C3pPw2%2Bnp7xbPIW5OofN2AegZzBsWuKZcGURwSdFRJyZ%2B2dF2q6tX7IIzIM0SdT3ydVCj2WXvMbDcIt4AWGCjc6D5CKmbNJRnlh6L6Fa2ELpL50i8lWz6Xo%2BbOrDI0VeiwwZ%2BnZmtL%2BlkwE4WsLkl1XlCWxiE0OptSV3IT%2F52m%2F5ZLjDRupzX5i4dWUxhN%2FC80CZLkBgzhWBR89GzBfAZdjRhucaXsbe2Tnhx3w%2FbgfS6OJIXCdaTC6%2FHthrIuXkw%3D%3D&X-Amz-Signature=256614c83c6b38fe8cff2e47708aafa08e474f48ff4d11a6e8a312a80d3e3e75&X-Amz-SignedHeaders=host&response-content-disposition=inline"
+                      src="src/assets/img.png"
                       alt="Character"
                       className="w-full h-full object-contain rounded-lg"
                   />

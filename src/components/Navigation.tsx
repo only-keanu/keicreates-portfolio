@@ -13,10 +13,8 @@ const navLinks = [{
 }, {
   name: 'Projects',
   href: '#projects'
-}, {
-  name: 'Gallery',
-  href: '#gallery'
-}, {
+},
+  {
   name: 'Contact',
   href: '#contact'
 }];
@@ -103,7 +101,7 @@ export function Navigation() {
           }} whileTap={{
             scale: 0.95
           }} className="hidden md:block px-6 py-2 bg-dota-gold-600 hover:bg-dota-gold-500 text-white font-ui text-sm font-bold uppercase tracking-wider border-2 border-dota-gold-500 transition-colors duration-200">
-              Hire Me
+              Contact Me
             </motion.a>
 
             {/* Mobile Menu Button */}
@@ -135,7 +133,7 @@ export function Navigation() {
             e.preventDefault();
             scrollToSection('#contact');
           }} className="block px-4 py-3 bg-dota-gold-600 text-white text-center font-ui text-sm font-bold uppercase tracking-wider">
-                Hire Me
+                Contact Me
               </a>
             </div>
           </motion.div>}
