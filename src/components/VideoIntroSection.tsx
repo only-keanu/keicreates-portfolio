@@ -1,9 +1,84 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause, Volume2, VolumeX, Maximize } from 'lucide-react';
 export function VideoIntroSection() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) {
+      return;
+    }
+
+    video.muted = isMuted;
+  }, [isMuted]);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) {
+      return;
+    }
+
+    const handleTimeUpdate = () => {
+      if (!video.duration) {
+        setProgress(0);
+        return;
+      }
+      setProgress((video.currentTime / video.duration) * 100);
+    };
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+    };
+
+    video.addEventListener('timeupdate', handleTimeUpdate);
+    video.addEventListener('ended', handleEnded);
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate);
+      video.removeEventListener('ended', handleEnded);
+    };
+  }, []);
+
+  const handleTogglePlay = async () => {
+    const video = videoRef.current;
+    if (!video) {
+      return;
+    }
+
+    if (video.paused) {
+      try {
+        await video.play();
+        setIsPlaying(true);
+      } catch {
+        setIsPlaying(false);
+      }
+    } else {
+      video.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const handleToggleMute = () => {
+    setIsMuted((prev) => !prev);
+  };
+
+  const handleFullscreen = async () => {
+    const video = videoRef.current;
+    if (!video) {
+      return;
+    }
+
+    if (document.fullscreenElement) {
+      await document.exitFullscreen();
+    } else if (video.requestFullscreen) {
+      await video.requestFullscreen();
+    }
+  };
+
   return <section className="py-24 px-4 bg-dota-dark-900 relative">
       <div className="max-w-5xl mx-auto">
         <motion.div initial={{
@@ -16,11 +91,11 @@ export function VideoIntroSection() {
         once: true
       }} className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-hero text-dota-silver-100 mb-2">
-            Hero Introduction
+            Introduction
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-transparent via-dota-gold-500 to-transparent mx-auto" />
           <p className="mt-4 text-dota-silver-500 font-lore italic">
-            "Every hero has a story. This is mine."
+            "Hi, Let me introduce myself!."
           </p>
         </motion.div>
 
@@ -47,50 +122,34 @@ export function VideoIntroSection() {
 
             {/* Video Container */}
             <div className="relative aspect-video bg-black overflow-hidden">
-              {/* Placeholder - Replace with actual video */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-dota-dark-900 to-black">
-                <div className="text-center">
-                  <motion.div animate={{
-                  scale: [1, 1.1, 1]
-                }} transition={{
-                  duration: 2,
-                  repeat: Infinity
-                }} className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-dota-gold-500 flex items-center justify-center bg-dota-dark-800">
-                    <Play className="w-12 h-12 text-dota-gold-400 ml-1" />
-                  </motion.div>
-                  <p className="text-dota-silver-500 font-lore">
-                    Video introduction coming soon
-                  </p>
-                  <p className="text-dota-silver-600 text-sm mt-2 font-ui">
-                    Coming Soon!
-                  </p>
-                </div>
-              </div>
-
-              {/* Video element (hidden until you add source) */}
-              {/* <video
-               className="w-full h-full object-cover"
-               src="YOUR_VIDEO_URL_HERE"
-               poster="YOUR_POSTER_IMAGE_URL"
-               /> */}
+              <video
+                ref={videoRef}
+                className="absolute inset-0 w-full h-full object-cover"
+                src="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/portfolio.mp4"
+                muted
+                playsInline
+                controls={false}
+              />
 
               {/* Video Controls Overlay */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="flex items-center gap-4">
-                  <button onClick={() => setIsPlaying(!isPlaying)} className="p-2 rounded-full bg-dota-gold-600 hover:bg-dota-gold-500 transition-colors">
+                  <button onClick={handleTogglePlay} className="p-2 rounded-full bg-dota-gold-600 hover:bg-dota-gold-500 transition-colors">
                     {isPlaying ? <Pause className="w-5 h-5 text-white" /> : <Play className="w-5 h-5 text-white ml-0.5" />}
                   </button>
 
                   {/* Progress bar */}
                   <div className="flex-1 h-1 bg-dota-dark-700 rounded-full overflow-hidden">
-                    <div className="h-full w-1/3 bg-dota-gold-500" />
+                    <div className="h-full bg-dota-gold-500 transition-[width] duration-200" style={{
+                    width: `${progress}%`
+                  }} />
                   </div>
 
-                  <button onClick={() => setIsMuted(!isMuted)} className="p-2 hover:bg-white/10 rounded transition-colors">
+                  <button onClick={handleToggleMute} className="p-2 hover:bg-white/10 rounded transition-colors">
                     {isMuted ? <VolumeX className="w-5 h-5 text-dota-silver-300" /> : <Volume2 className="w-5 h-5 text-dota-silver-300" />}
                   </button>
 
-                  <button className="p-2 hover:bg-white/10 rounded transition-colors">
+                  <button onClick={handleFullscreen} className="p-2 hover:bg-white/10 rounded transition-colors">
                     <Maximize className="w-5 h-5 text-dota-silver-300" />
                   </button>
                 </div>
