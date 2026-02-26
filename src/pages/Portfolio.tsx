@@ -5,6 +5,7 @@ import { CodeIntroSection } from '../components/CodeIntroSection';
 import { VideoIntroSection } from '../components/VideoIntroSection';
 import { AbilitiesSection } from '../components/AbilitiesSection';
 import { AttributesSection } from '../components/AttributesSection';
+import { ExperienceSection } from '../components/ExperienceSection';
 import { ProjectsSection } from '../components/ProjectsSection';
 import { ProjectGallerySection } from '../components/ProjectGallerySection';
 import { ItemsSection } from '../components/ItemsSection';
@@ -20,6 +21,9 @@ export function Portfolio() {
       </div>
       <div id="abilities">
         <AbilitiesSection />
+      </div>
+      <div id="experience">
+        <ExperienceSection />
       </div>
       <div id="projects">
         <ProjectsSection />
