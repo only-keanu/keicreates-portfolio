@@ -77,10 +77,10 @@ export function HeroIntro() {
               transition={{ delay: 1.5, duration: 2, repeat: Infinity }}
               className=" absolute bottom-20 left-0.9 -translate-x-1/2 flex flex-col items-center gap-8 md:gap-16 text-dota-gold-600"
           >
-              <div className="text-xs uppercase tracking-[0.3em] mb-2 font-ui">
-                  Scroll
-              </div>
               <div className="w-[1px] h-12 bg-gradient-to-b from-dota-gold-600 to-transparent" />
+              {/*<div className="text-xs uppercase tracking-[0.3em] mb-2 font-ui">*/}
+              {/*    Scroll for More :)*/}
+              {/*</div>*/}
           </motion.div>
 
           {/* Intro Text */}
@@ -90,7 +90,7 @@ export function HeroIntro() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
           >
-              Hey, I'm{' '}
+              Hey, You can call me {' '}
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Kei
             </span>

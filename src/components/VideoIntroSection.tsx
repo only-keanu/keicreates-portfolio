@@ -124,11 +124,15 @@ export function VideoIntroSection() {
             <div className="relative aspect-video bg-black overflow-hidden">
               <video
                 ref={videoRef}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover cursor-pointer"
                 src="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/portfolio.mp4"
+                poster="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/WIN_20250529_12_26_37_Pro.jpg"
                 muted
                 playsInline
                 controls={false}
+                onClick={handleTogglePlay}
+                onPlay={() => setIsPlaying(true)}
+                onPause={() => setIsPlaying(false)}
               />
 
               {/* Video Controls Overlay */}

@@ -41,9 +41,12 @@ export function CodeIntroSection() {
         once: true
       }} className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-hero text-dota-silver-100 mb-2">
-            Developer Profile
+            About Me
           </h2>
+
           <div className="h-1 w-24 bg-gradient-to-r from-transparent via-dota-gold-500 to-transparent mx-auto" />
+
+            <p className="text-md font-hero text-dota-silver-100 mb-2"> Hello</p>
         </motion.div>
 
         <motion.div initial={{
