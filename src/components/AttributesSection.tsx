@@ -20,10 +20,12 @@ export function AttributesSection() {
             once: true
           }} className="w-full bg-gradient-to-b from-dota-dark-700 to-dota-dark-900 p-1 border border-dota-gold-600/30 mb-8">
               <div className="aspect-[3/4] bg-dota-dark-900 relative overflow-hidden group">
-                {/* Abstract Character Silhouette */}
-                <div className="absolute inset-0 flex items-center justify-center bg-dota-dark-800">
-                  <Sword className="w-32 h-32 text-dota-gold-600/20" />
-                </div>
+                <img
+                  src="https://keane-portfolio.s3.ap-southeast-2.amazonaws.com/2.jpg"
+                  alt="Portrait of Kei"
+                  className="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
                   <h3 className="text-2xl font-hero text-dota-gold-400">
                     Level 25
