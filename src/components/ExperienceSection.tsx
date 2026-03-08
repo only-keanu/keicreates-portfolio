@@ -64,7 +64,7 @@ export function ExperienceSection() {
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-transparent via-dota-gold-500 to-transparent mx-auto" />
           <p className="mt-4 text-dota-silver-500 font-lore text-lg italic">
-            "Veteran of many campaigns, forged in high-stakes deployments."
+            "Here is a timeline of my experience from my early years to my current career "
           </p>
         </motion.div>
 

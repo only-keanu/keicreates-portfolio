@@ -1,34 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Sparkles } from 'lucide-react';
+import projectPreview from '../assets/img.png';
 const projects = [{
-  title: 'Arcane Dashboard',
-  description: 'Real-time analytics platform with mystical data visualization and predictive insights.',
+  title: 'Example 1',
+  description: 'Test.',
   tech: ['React', 'D3.js', 'WebSocket'],
   link: '#',
   github: '#',
-  color: 'blue'
+  color: 'blue',
+  image: projectPreview,
+  imageAlt: 'Test'
 }, {
-  title: 'Golden Marketplace',
-  description: 'E-commerce platform with blockchain integration for secure, transparent transactions.',
+  title: 'Example 2',
+  description: 'Test.',
   tech: ['Next.js', 'Solidity', 'IPFS'],
   link: '#',
   github: '#',
-  color: 'gold'
+  color: 'gold',
+  image: projectPreview,
+  imageAlt: 'Golden Marketplace preview'
 }, {
-  title: 'Crimson Auth',
-  description: 'Enterprise authentication system with biometric security and zero-trust architecture.',
+  title: 'Example 3',
+  description: 'Test.',
   tech: ['Node.js', 'Redis', 'PostgreSQL'],
   link: '#',
   github: '#',
-  color: 'crimson'
+  color: 'crimson',
+  image: projectPreview,
+  imageAlt: 'Crimson Auth preview'
 }, {
-  title: 'Ethereal CMS',
-  description: 'Headless content management with AI-powered content generation and optimization.',
+  title: 'Example 3',
+  description: 'Test.',
   tech: ['TypeScript', 'GraphQL', 'MongoDB'],
   link: '#',
   github: '#',
-  color: 'blue'
+  color: 'blue',
+  image: projectPreview,
+  imageAlt: 'Ethereal CMS preview'
 }];
 export function ProjectsSection() {
   return <section className="py-24 px-4 bg-dota-dark-800 relative overflow-hidden">
@@ -62,7 +71,7 @@ export function ProjectsSection() {
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-transparent via-dota-gold-500 to-transparent mx-auto" />
           <p className="mt-4 text-dota-silver-500 font-lore text-lg italic">
-            "Legendary creations forged in the fires of innovation."
+            "A few projects that I've come to create since the start of my career."
           </p>
         </motion.div>
 
@@ -143,6 +152,14 @@ function ProjectCard({
 
         {/* Card Body */}
         <div className="p-6">
+          <div className="mb-6 overflow-hidden rounded-md border border-dota-dark-700 bg-dota-dark-900">
+            <img
+              src={project.image}
+              alt={project.imageAlt}
+              className="h-48 w-full object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tech.map((tech: string, i: number) => <motion.span key={i} initial={{
             opacity: 0,

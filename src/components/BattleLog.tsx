@@ -10,8 +10,8 @@ export function BattleLog() {
           </h3>
 
           <div className="space-y-3 font-mono text-sm h-48 overflow-y-auto custom-scrollbar pr-2">
-            <LogEntry time="20:45" text="Hero has reached level 25." type="system" />
-            <LogEntry time="20:48" text="New project 'E-Commerce Engine' deployed successfully." type="success" />
+            {/*<LogEntry time="20:45" text="Hero has reached level 25." type="system" />*/}
+            <LogEntry time="20:48" text="Currently working on a personal project :))" type="success" />
             <LogEntry time="21:15" text="Looking for team? Contact channels open." type="info" />
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -24,7 +24,7 @@ export function BattleLog() {
         </div>
 
         <div className="mt-8 text-center text-dota-silver-500 text-xs">
-          <p>Match ID: 83920192 • Replay Available</p>
+          <p>Player ID: 83920192 • </p>
           <p className="mt-2">
             © {new Date().getFullYear()} Keane Hernandez. All rights reserved.
           </p>

@@ -95,7 +95,7 @@ export function VideoIntroSection() {
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-transparent via-dota-gold-500 to-transparent mx-auto" />
           <p className="mt-4 text-dota-silver-500 font-lore italic">
-            "Hi, Let me introduce myself!."
+            "If you wanna know more about me"
           </p>
         </motion.div>
 
@@ -163,10 +163,10 @@ export function VideoIntroSection() {
             {/* Video Title Bar */}
             <div className="bg-dota-dark-900 px-4 py-3 border-t-2 border-dota-dark-700">
               <h3 className="font-hero text-dota-gold-400 text-lg">
-                Meet the Developer
+                Meet Me!
               </h3>
               <p className="text-dota-silver-500 text-sm font-ui mt-1">
-                A brief introduction to my journey and passion for development
+                Hi :D
               </p>
             </div>
           </div>

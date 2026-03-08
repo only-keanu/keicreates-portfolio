@@ -19,9 +19,9 @@ export function Portfolio() {
         <VideoIntroSection />
         <AttributesSection />
       </div>
-      <div id="abilities">
-        <AbilitiesSection />
-      </div>
+      {/*<div id="abilities">*/}
+      {/*  <AbilitiesSection />*/}
+      {/*</div>*/}
       <div id="experience">
         <ExperienceSection />
       </div>

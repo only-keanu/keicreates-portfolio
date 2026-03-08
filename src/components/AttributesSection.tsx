@@ -28,10 +28,10 @@ export function AttributesSection() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
                   <h3 className="text-2xl font-hero text-dota-gold-400">
-                    Level 25
+                    Keane Hernandez
                   </h3>
                   <p className="text-dota-silver-500 font-ui text-sm">
-                    Full Stack Developer
+                    Java Full Stack Developer
                   </p>
                 </div>
               </div>
@@ -48,10 +48,10 @@ export function AttributesSection() {
                 Biography
               </h3>
               <p className="font-lore text-dota-silver-300 text-lg leading-relaxed italic">
-                "Born in the era of dial-up, forged in the fires of startup
-                crunches. This hero specializes in rapid deployment and scalable
-                architecture. Known to carry teams through difficult sprints and
-                secure the ancient codebase."
+                "Hey, you can call me Kei. I'm a fullstack developer that's eager to build awesome systems.
+                I'm passionate about tech and how it helps people with their businesses. I like to play
+                games, watch anime and read books in my freetime.
+                "
               </p>
             </motion.div>
           </div>
@@ -75,17 +75,19 @@ export function AttributesSection() {
                   </div>
                   <div>
                     <h4 className="font-hero text-dota-silver-100 text-lg">
-                      Strength
+                      Frontend
                     </h4>
                     <p className="text-xs text-dota-silver-500 uppercase tracking-wider">
-                      Leadership & Resilience
+                      Development
                     </p>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <StatBar label="Team Leadership" value={85} color="bg-dota-crimson-500" />
-                  <StatBar label="Project Management" value={70} color="bg-dota-crimson-500" />
-                  <StatBar label="Crisis Handling" value={90} color="bg-dota-crimson-500" />
+                  <StatBar label="React" value={85} color="bg-dota-crimson-500" />
+                  <StatBar label="Angular" value={70} color="bg-dota-crimson-500" />
+                  <StatBar label="HTML" value={60} color="bg-dota-crimson-500" />
+                  <StatBar label="CSS" value={45} color="bg-dota-crimson-500" />
+                  <StatBar label="JavaScript" value={50} color="bg-dota-crimson-500" />
                 </div>
               </motion.div>
 
@@ -107,17 +109,19 @@ export function AttributesSection() {
                   </div>
                   <div>
                     <h4 className="font-hero text-dota-silver-100 text-lg">
-                      Agility
+                      Backend
                     </h4>
                     <p className="text-xs text-dota-silver-500 uppercase tracking-wider">
-                      Speed & Execution
+                      Development
                     </p>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <StatBar label="Coding Speed" value={95} color="bg-dota-gold-500" />
-                  <StatBar label="Optimization" value={80} color="bg-dota-gold-500" />
-                  <StatBar label="Adaptability" value={85} color="bg-dota-gold-500" />
+                  <StatBar label="Java" value={75} color="bg-dota-gold-500" />
+                  <StatBar label="SpringBoot" value={60} color="bg-dota-gold-500" />
+                  <StatBar label="Python" value={85} color="bg-dota-gold-500" />
+                  <StatBar label="Postgres" value={90} color="bg-dota-gold-500" />
+                  <StatBar label="TypeScript" value={50} color="bg-dota-gold-500" />
                 </div>
               </motion.div>
 
@@ -139,10 +143,10 @@ export function AttributesSection() {
                   </div>
                   <div>
                     <h4 className="font-hero text-dota-silver-100 text-lg">
-                      Intelligence
+                      Others
                     </h4>
                     <p className="text-xs text-dota-silver-500 uppercase tracking-wider">
-                      Logic & Architecture
+                      Etc...
                     </p>
                   </div>
                 </div>
@@ -156,10 +160,10 @@ export function AttributesSection() {
 
             {/* Additional Stats Panel */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-              <StatBox label="Damage" value="95-105" icon="⚔️" />
-              <StatBox label="Armor" value="14.5" icon="🛡️" />
-              <StatBox label="Move Speed" value="315" icon="🦶" />
-              <StatBox label="Attack Range" value="600" icon="🏹" />
+              <StatBox label="WPM" value="75" icon="⚔️" />
+              <StatBox label="Debugged Lines" value="1000+" icon="🛡️" />
+              <StatBox label="Tickets Resolved" value="50+" icon="🦶" />
+              <StatBox label="Github Contributions" value="400+" icon="🏹" />
             </div>
           </div>
         </div>

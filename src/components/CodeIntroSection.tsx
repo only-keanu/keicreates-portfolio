@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 import { Terminal } from 'lucide-react';
 export function CodeIntroSection() {
   const [displayedCode, setDisplayedCode] = useState('');
-  const codeLines = ['const developer = {', '  name: "Keane Hernandez",', '  title: "Full Stack Developer",', '  location: "Philippines",', '  experience: "2+ years",', '  specialization: ["React", "SpringBoot, "Java", "TypeScript"],', '  passion: "Building scalable web applications",', '  status: "Available for hire"', '};', '', 'console.log(developer.passion);', '// Output: "Building scalable web applications for business problems"'];
+  const codeLines = [
+    'Hi, I am Keane. I am a full stack developer who enjoys building and turning ideas into real software.',
+    'I love building applications that are not only functional but thoughtfully designed.',
+    'My journey into software development started from both technical learning and real-world business applications.',
+    'I started as an executive assistant but transitioned back when I realized my love for technology and creating.',
+    'I enjoy understanding how systems work and building things that make everyday processes simpler and more efficient.',
+    "For me, coding isn't just about writing programs - it's about creating tools that help people do their work better.",
+  ];
   useEffect(() => {
     let currentLine = 0;
     let currentChar = 0;
@@ -23,14 +30,14 @@ export function CodeIntroSection() {
       } else {
         clearInterval(typeInterval);
       }
-    }, 30);
+    }, 20);
     return () => clearInterval(typeInterval);
   }, []);
   return <section className="py-24 px-4 bg-dota-dark-800 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:20px_20px]" />
 
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div initial={{
         opacity: 0,
         y: 20
@@ -46,7 +53,6 @@ export function CodeIntroSection() {
 
           <div className="h-1 w-24 bg-gradient-to-r from-transparent via-dota-gold-500 to-transparent mx-auto" />
 
-            <p className="text-md font-hero text-dota-silver-100 mb-2"> Hello</p>
         </motion.div>
 
         <motion.div initial={{

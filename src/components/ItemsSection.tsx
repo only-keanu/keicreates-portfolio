@@ -1,61 +1,148 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Database, Layout, Server, Layers, Cpu, GitBranch, Cloud, BoxIcon } from 'lucide-react';
-const inventory = [{
-  name: 'React Blade',
-  type: 'Framework',
-  icon: Layout,
-  cost: 4200,
-  rarity: 'legendary'
-}, {
-  name: 'TypeScript Staff',
-  type: 'Language',
-  icon: Terminal,
-  cost: 2800,
-  rarity: 'rare'
-}, {
-  name: 'Node.js Stone',
-  type: 'Runtime',
-  icon: Server,
-  cost: 3400,
-  rarity: 'rare'
-}, {
-  name: 'Postgres Relic',
-  type: 'Database',
-  icon: Database,
-  cost: 2100,
-  rarity: 'uncommon'
-}, {
-  name: 'Docker Cube',
-  type: 'DevOps',
-  icon: BoxIcon,
-  cost: 1800,
-  rarity: 'common'
-}, {
-  name: 'Tailwind Cloak',
-  type: 'Styling',
-  icon: Layers,
-  cost: 900,
-  rarity: 'common'
-}, {
-  name: 'Next.js Scepter',
-  type: 'Framework',
-  icon: Cpu,
-  cost: 5600,
-  rarity: 'legendary'
-}, {
-  name: 'Git Scroll',
-  type: 'Version Control',
-  icon: GitBranch,
-  cost: 500,
-  rarity: 'common'
-}, {
-  name: 'AWS Totem',
-  type: 'Cloud',
-  icon: Cloud,
-  cost: 4800,
-  rarity: 'epic'
-}];
+import { Terminal, Database, Layout, Server, Layers, Cpu, GitBranch, Cloud, BoxIcon, Github } from 'lucide-react';
+const inventory = [
+  {
+    name: 'React/Next.js',
+    type: 'Framework',
+    icon: Layout,
+    cost: 5200,
+    rarity: 'legendary'
+  },
+  {
+    name: 'JavaScript',
+    type: 'Language',
+    icon: Terminal,
+    cost: 3200,
+    rarity: 'rare'
+  },
+  {
+    name: 'HTML5 and CSS',
+    type: 'Frontend',
+    icon: Layers,
+    cost: 2000,
+    rarity: 'uncommon'
+  },
+  {
+    name: 'Tailwind',
+    type: 'Styling',
+    icon: Layers,
+    cost: 1800,
+    rarity: 'uncommon'
+  },
+  {
+    name: 'PostgreSQL',
+    type: 'Database',
+    icon: Database,
+    cost: 2600,
+    rarity: 'rare'
+  },
+  {
+    name: 'MariaDB',
+    type: 'Database',
+    icon: Database,
+    cost: 2200,
+    rarity: 'uncommon'
+  },
+  {
+    name: 'SQL',
+    type: 'Query Language',
+    icon: Database,
+    cost: 2000,
+    rarity: 'uncommon'
+  },
+  {
+    name: 'AWS S3',
+    type: 'Cloud',
+    icon: Cloud,
+    cost: 4200,
+    rarity: 'epic'
+  },
+  {
+    name: 'Git',
+    type: 'Version Control',
+    icon: GitBranch,
+    cost: 1200,
+    rarity: 'common'
+  },
+  {
+    name: 'GitHub',
+    type: 'Collaboration',
+    icon: Github,
+    cost: 1500,
+    rarity: 'common'
+  },
+  {
+    name: 'Docker',
+    type: 'DevOps',
+    icon: BoxIcon,
+    cost: 2800,
+    rarity: 'rare'
+  },
+  {
+    name: 'IntelliJ',
+    type: 'IDE',
+    icon: Cpu,
+    cost: 1400,
+    rarity: 'common'
+  },
+  {
+    name: 'VS Code',
+    type: 'IDE',
+    icon: Cpu,
+    cost: 1400,
+    rarity: 'common'
+  },
+  {
+    name: 'Postman',
+    type: 'API Tool',
+    icon: Server,
+    cost: 1600,
+    rarity: 'common'
+  },
+  {
+    name: 'Agile Development',
+    type: 'Workflow',
+    icon: Layers,
+    cost: 2400,
+    rarity: 'uncommon'
+  },
+  {
+    name: 'SCRUM',
+    type: 'Workflow',
+    icon: Layers,
+    cost: 2400,
+    rarity: 'uncommon'
+  },
+  {
+    name: 'Jenkins',
+    type: 'CI/CD',
+    icon: Server,
+    cost: 3600,
+    rarity: 'rare'
+  },
+  {
+    name: 'n8n',
+    type: 'Automation',
+    icon: Server,
+    cost: 2800,
+    rarity: 'rare'
+  },
+  {
+    name: 'Kotlin',
+    type: 'Language',
+    icon: Terminal,
+    cost: 2600,
+    rarity: 'rare'
+  },
+  {
+    name: 'Angular',
+    type: 'Framework',
+    icon: Layout,
+    cost: 3800,
+    rarity: 'rare'
+  }
+];
 export function ItemsSection() {
   return <section className="py-24 bg-dota-dark-900 relative">
       <div className="max-w-4xl mx-auto px-6">
@@ -67,10 +154,10 @@ export function ItemsSection() {
         once: true
       }} className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-hero text-dota-silver-100 mb-2">
-            Inventory
+            Skills & Tools
           </h2>
           <p className="text-dota-silver-500 font-lore italic">
-            "Equipped for any encounter."
+            "Equipped for the right tools and skills for any need."
           </p>
         </motion.div>
 
@@ -88,11 +175,11 @@ export function ItemsSection() {
           </div>
 
           <div className="mt-6 flex justify-between items-center text-dota-silver-500 font-ui text-xs uppercase tracking-wider border-t border-dota-dark-700 pt-4">
-            <span>Total Net Worth</span>
-            <span className="text-dota-gold-400 font-bold flex items-center gap-1">
-              <span className="w-3 h-3 rounded-full bg-dota-gold-500 inline-block" />
-              25,400
-            </span>
+            {/*<span>Total Net Worth</span>*/}
+            {/*<span className="text-dota-gold-400 font-bold flex items-center gap-1">*/}
+            {/*  <span className="w-3 h-3 rounded-full bg-dota-gold-500 inline-block" />*/}
+            {/*  25,400*/}
+            {/*</span>*/}
           </div>
         </div>
       </div>

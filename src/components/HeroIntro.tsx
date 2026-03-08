@@ -57,6 +57,7 @@ export function HeroIntro() {
                   repeat: Infinity,
                   ease: 'easeInOut',
               }}
+
           >
               <div className="w-64 h-64 md:w-80 md:h-80 relative">
                   <img

@@ -7,10 +7,12 @@ const navLinks = [{
 }, {
   name: 'About',
   href: '#about'
-}, {
-  name: 'Abilities',
-  href: '#abilities'
-}, {
+},
+//  {
+//   name: 'Abilities',
+//   href: '#abilities'
+// },
+{
   name: 'Experience',
   href: '#experience'
 }, {
