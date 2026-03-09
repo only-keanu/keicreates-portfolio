@@ -19,7 +19,7 @@ const projects = [{
   github: '#',
   color: 'gold',
   image: projectPreview,
-  imageAlt: 'Golden Marketplace preview'
+  imageAlt: ''
 }, {
   title: 'Example 3',
   description: 'Test.',
@@ -28,7 +28,7 @@ const projects = [{
   github: '#',
   color: 'crimson',
   image: projectPreview,
-  imageAlt: 'Crimson Auth preview'
+  imageAlt: ''
 }, {
   title: 'Example 3',
   description: 'Test.',
@@ -37,7 +37,7 @@ const projects = [{
   github: '#',
   color: 'blue',
   image: projectPreview,
-  imageAlt: 'Ethereal CMS preview'
+  imageAlt: ''
 }];
 export function ProjectsSection() {
   return <section className="py-24 px-4 bg-dota-dark-800 relative overflow-hidden">
